@@ -268,7 +268,7 @@ extension XCUIElement {
         info["rect"] = snapshot.wdRect() as AnyObject
         info["frame"] = NSStringFromCGRect(snapshot.wdFrame()) as AnyObject
         info["isEnabled"] = snapshot.isWDEnabled() as AnyObject
-        info["isVisible"] = snapshot.isWDEnabled() as AnyObject
+        info["isVisible"] = snapshot.isWDVisible() as AnyObject
         
         let childrenElements = snapshot.children
         if childrenElements != nil && childrenElements!.count > 0 {
